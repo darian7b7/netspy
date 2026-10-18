@@ -1,0 +1,13 @@
+# NetSpy - Python 3.10 or newer, Windows 10/11
+#
+# Install everything (recommended):
+#     python -m pip install -r requirements.txt
+#
+# --- Needed for every mode -------------------------------------------------
+psutil>=5.9        # processes, connections, services
+rich>=13.0         # the terminal interface
+
+# --- Needed only for ADVANCED mode (python netspy.py --advanced) -----------
+# Also requires the free Npcap driver: https://npcap.com/#download
+scapy>=2.5         # opens the Npcap capture
+dpkt>=1.9          # fast packet decoding (without it, ADVANCED is slower)
